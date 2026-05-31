@@ -98,7 +98,34 @@ footer{
 <a href="#staff">Yetkili Başvuru</a>
 </nav>
 
-<section class="hero">
+<div class="card" style="max-width:500px;margin:20px auto;">
+<h3>Sunucu IP</h3>
+<p id="ip">NaNiBoxPvP.aternos.me</p>
+
+<button class="btn" onclick="copyIP()">IP'yi Kopyala</button>
+
+<script>
+function copyIP() {
+navigator.clipboard.writeText("NaNiBoxPvP.aternos.me");
+alert("IP kopyalandı: NaNiBoxPvP.aternos.me");
+}
+</script>
+</div>
+
+Ayrıca sayfanın en altındaki </footer> bölümünün üstüne şu kuralları ekle:
+
+<section class="section">
+<h2>Sunucu Kuralları</h2>
+
+<div class="card" style="margin:auto;max-width:700px;width:100%;">
+<p>1. Hile kullanmak yasaktır.</p>
+<p>2. Küfür etmek yasaktır.</p>
+<p>3. Reklam yapmak yasaktır.</p>
+<p>4. Bug kullanımı yasaktır.</p>
+<p>5. Yetkililere saygılı olun.</p>
+<p>6. Hesap paylaşımı önerilmez.</p>
+</div>
+</section>
 <h2>NaNiBoxPvP'ye Hoş Geldin!</h2>
 <p>Kasalar, Spawnerlar, VIP Paketleri ve Aktif Yetkili Ekibi!</p>
 
